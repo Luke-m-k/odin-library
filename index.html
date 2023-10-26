@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <h1>LIBRARY</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Pages</th>
+                <th>Status</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+        
+    </table>
+    <button id="new-book-btn">New Book</button>
+    <form action="" class="hidden">
+        <label for="title">Title :</label><input type="text" id="title">
+        <label for="author">Author :</label><input type="text" id="author">
+        <label for="pages">Number of Pages :</label><input type="number" id="pages">
+        <label for="">Status :</label>
+        <label for="read"><input type="radio" name="status" id="read" value="Read" class="status"> Read</label>
+        
+        <label for="not read"><input type="radio" name="status" id="not-read" value="Not Read" class="status">Not Read</label>
+        
+        <button id="submit-btn">Submit</button>
+    </form>
+    </main>
+</body>
+</html>
