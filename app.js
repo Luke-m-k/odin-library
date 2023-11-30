@@ -10,11 +10,21 @@ const form = document.querySelector('form');
 
 
 // The Constructor.
-function Book(title, author, pages, status) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
+//function Book(title, author, pages, status) {
+//    this.title = title;
+//   this.author = author;
+//    this.pages = pages;
+//    this.status = status;
+//}
+
+// Class instead of the old Constructor.
+class Book {
+    constructor(title, author, pages, status) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.status = status;
+    }
 }
 
 submitBtn.addEventListener('click', addBookToLibrary);
